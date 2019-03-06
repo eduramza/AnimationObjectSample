@@ -1,8 +1,10 @@
 package com.raywenderlich.rocketlauncher.animationactivities
 
+
 import android.animation.ValueAnimator
 import android.view.animation.LinearInterpolator
 
+//option: Launch a Rocket
 class LaunchRocketValueAnimatorAnimationActivity : BaseAnimationActivity() {
 
     override fun onStartAnimation() {
@@ -14,7 +16,7 @@ class LaunchRocketValueAnimatorAnimationActivity : BaseAnimationActivity() {
         }
 
         valueAnimator.interpolator = LinearInterpolator()
-        valueAnimator.duration = BaseAnimationActivity.Companion.DEFAULT_ANIMATION_DURATION
+        valueAnimator.duration = BaseAnimationActivity.DEFAULT_ANIMATION_DURATION
 
         valueAnimator.start()
     }
